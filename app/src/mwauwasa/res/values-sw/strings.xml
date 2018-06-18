@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tariffs_description_water_services">…</string>
+    <string name="tariffs_description_sewerage">…</string>
+
+    <string name="new_connection_default_description"></string>
+    <string name="new_connection_next_steps"></string>
+
+</resources>

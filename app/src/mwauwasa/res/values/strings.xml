@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources >
+    <string name="app_name">MWAUWASA</string>
+
+    <string name="map_cameraTargetLat">-2.516430</string>
+    <string name="map_cameraTargetLng">32.917452</string>
+    <string name="map_ne_lat">-2.63059</string>
+    <string name="map_ne_lng">32.78732</string>
+    <string name="map_sw_lat">-2.42479</string>
+    <string name="map_sw_lng">33.06198</string>
+
+    <string name="tariffs_description_water_services">MWAUWASA’S Tariff Structure is built on the basis of consumption categories with fair consideration of equity and full cost recovery. Tariff review is regulated by the Energy and Water Utilities Regulatory Authority (EWURA) with effect from 2010/2012. The lower tariff at kiosks and stand posts is intended to ensure basic supply to the poor. Therefore the year under review was characterized by two tariff levels as reflected in the table below.</string>
+    <string name="tariffs_description_sewerage">Cost for Sewerage is set at 50% the cost of consumed water.</string>
+
+    <string name="new_connection_default_description"></string>
+    <string name="new_connection_next_steps">The following are procedures for new water connections:
+
+1. The customer will report to Customer Service unit at zone office or head quarter for application of  connecting water or sanitation services  to take his cost estimates within two working days
+2. Issue customer with New Connection Survey Form to be filled
+3. Record the following particulars in a special Register Book for site survey: Customer’s name, Customer’s phone number, Receipt number, Area for survey, and Area Civil Artisan’s name.
+4. Issue customer with new connection application/agreement form for water supply to fill and submit
+5. Assign an Area Civil Artisan to do site survey for the customer and establish the required site sketches, distance measurement from the main pipe and GIS coordinates
+6. Do new connection survey at customer’s site and advise technically as appropriate
+7. Receive site survey implementation report from Civil Artisan
+8. Check and verify distance, GPS coordinates
+9. Prepare new connection cost estimates and hand customer
+10. Prepare Invoice for new connection
+11. Dispatch invoice to customer and record in a Register date of dispatch with customer’s signature
+12. Receive payment for new connection
+13. Record date of payment for new connection in a Register
+14. Raise Material Requisition Note
+15. Approve Material Requisition Note and check whether customer is in GIS mapping
+16. Supply new connection materials (pipes and fittings)
+17. Collect new connection materials (pipes and fittings) from Supplies Section
+18. Submit customer file to computer room for registration of customer particulars in the billing system (SBM)
+19. Submit file with customer particulars (name, meter number, and account number) to GIS Office
+20. Excavate new connection pipe trench to required depth specification
+21. Check depth &amp; works
+22. Connect water pipe to new customer
+23. Check, approve and back fill new connection works
+24. Verify/declare that the connection was done and supply of water initiated to the customer
+25. Report to Customer Services Office upon completion of new connection works
+26. Submit completed customer file to Registry Office</string>
+
+</resources>

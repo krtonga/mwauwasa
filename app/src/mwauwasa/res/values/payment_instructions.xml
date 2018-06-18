@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="airtel_money">
+        <item>@string/airtel_step_1</item>
+        <item>@string/airtel_step_2</item>
+        <item>@string/airtel_step_3</item>
+        <item>@string/airtel_step_4</item>
+        <item>@string/airtel_step_5</item>
+        <item>@string/airtel_step_6</item>
+        <item>@string/airtel_step_7</item>
+        <item>@string/airtel_step_8</item>
+        <item>@string/airtel_step_9</item>
+    </array>
+
+    <array name="easy_pesa">
+        <item>@string/easy_pesa_step_1</item>
+        <item>@string/easy_pesa_step_2</item>
+        <item>@string/easy_pesa_step_3</item>
+        <item>@string/easy_pesa_step_4</item>
+        <item>@string/easy_pesa_step_5</item>
+        <item>@string/easy_pesa_step_6</item>
+        <item>@string/easy_pesa_step_7</item>
+    </array>
+
+    <array name="m_pesa">
+        <item>@string/m_pesa_step_1</item>
+        <item>@string/m_pesa_step_2</item>
+        <item>@string/m_pesa_step_3</item>
+        <item>@string/m_pesa_step_4</item>
+        <item>@string/m_pesa_step_5</item>
+        <item>@string/m_pesa_step_6</item>
+    </array>
+
+    <array name="tigo_pesa">
+        <item>@string/tigo_pesa_step_1</item>
+        <item>@string/tigo_pesa_step_2</item>
+        <item>@string/tigo_pesa_step_3</item>
+        <item>@string/tigo_pesa_step_4</item>
+        <item>@string/tigo_pesa_step_5</item>
+        <item>@string/tigo_pesa_step_6</item>
+    </array>
+
+    <array name="halopesa">
+        <item>@string/halopesa_step_1</item>
+        <item>@string/halopesa_step_2</item>
+        <item>@string/halopesa_step_3</item>
+        <item>@string/halopesa_step_4</item>
+        <item>@string/halopesa_step_5</item>
+        <item>@string/halopesa_step_6</item>
+    </array>
+
+    <array name="maxicom">
+        <item>@string/maxicom_steps_1</item>
+    </array>
+
+    <array name="selcom">
+        <item>@string/selcom_steps_1</item>
+    </array>
+
+    <array name="banks">
+        <item>@string/banks_barclays</item>
+        <item>@string/banks_crdb</item>
+        <item>@string/banks_nmb</item>
+        <item>@string/banks_boa</item>
+    </array>
+
+    <array name="sim_banking">
+        <item>@string/sim_banking_crdb</item>
+        <item>@string/sim_banking_nbm</item>
+        <item>@string/sim_banking_exim_mobile</item>
+        <item>@string/sim_banking_tpb_popote</item>
+        <item>@string/sim_banking_acb</item>
+    </array>
+
+    <string name="title_airtel_money" translatable="false">Airtel Money\nDial *150*60#</string>
+    <string name="airtel_step_1">Dial *150*60#</string>
+    <string name="airtel_step_2">Select make payments, then</string>
+    <string name="airtel_step_3">Select choose business, then</string>
+    <string name="airtel_step_4">Select Airtel corporate, then</string>
+    <string name="airtel_step_5">Select post paid</string>
+    <string name="airtel_step_6">Enter amount in TSh</string>
+    <string name="airtel_step_7">Enter Reference number</string>
+    <string name="airtel_step_8">Enter your PIN to confirm paying POSTPAID, TSh xxx with reference number xxx. DAWASCO reference is ACCOUNT NUMBER</string>
+    <string name="airtel_step_9">Press Ok</string>
+
+    <string name="title_easy_pesa" translatable="false">EasyPesa\nDial *150*02#</string>
+    <string name="easy_pesa_step_1">Dial *150*02#</string>
+    <string name="easy_pesa_step_2">Select Payments</string>
+    <string name="easy_pesa_step_3">Select Water bill payments</string>
+    <string name="easy_pesa_step_4">Select DAWASCO</string>
+    <string name="easy_pesa_step_5">Enter DAWASCO ACCOUNT NUMBER</string>
+    <string name="easy_pesa_step_6">Enter the billed amount</string>
+    <string name="easy_pesa_step_7">Enter PIN to confirm your payments, TSh xxx with reference number xxx</string>
+
+    <string name="title_m_pesa" translatable="false">MPesa\nDial *150*00#</string>
+    <string name="m_pesa_step_1">Dial *150*00#</string>
+    <string name="m_pesa_step_2">Select Payments Name</string>
+    <string name="m_pesa_step_3">Enter DAWASCO payment No - 10500.</string>
+    <string name="m_pesa_step_4">Enter your DAWASCO ACCOUNT NUMBER</string>
+    <string name="m_pesa_step_5">Enter the billed amount</string>
+    <string name="m_pesa_step_6">Enter your PIN to confirm you payments, TSh xxx with reference number xxx</string>
+
+    <string name="title_tigo_pesa" translatable="false">TigoPesa\nDial *150*01#</string>
+    <string name="tigo_pesa_step_1">Dial *150*01#.</string>
+    <string name="tigo_pesa_step_2">Select Payments.</string>
+    <string name="tigo_pesa_step_3">Select DAWASCO</string>
+    <string name="tigo_pesa_step_4">Select DAWASCO ACCOUNT NUMBER</string>
+    <string name="tigo_pesa_step_5">Enter the billed amount</string>
+    <string name="tigo_pesa_step_6">Enter pIN to confirm your payments, TSh xxx with reference number xxx.</string>
+
+    <string name="title_halopesa" translatable="false">Halopesa\nDial *150*88#</string>
+    <string name="halopesa_step_1">Dial *150*88#</string>
+    <string name="halopesa_step_2">Select Bill payments</string>
+    <string name="halopesa_step_3">Select Water bill payments</string>
+    <string name="halopesa_step_4">Enter DAWASCO ACCOUNT NUMBER</string>
+    <string name="halopesa_step_5">Enter the billed amount</string>
+    <string name="halopesa_step_6">Enter PIN to confirm you paymetns, TSh xxx with reference number xxxx</string>
+
+    <string name="title_maxicom" translatable="false">Max-Malipo</string>
+    <string name="maxicom_steps_1">Go to the nearest Max-Malipo agent with your account no and amount of money you wish to pay and payments will be effected by Max-Malipo Agent</string>
+
+    <string name="title_selcom" translatable="false">Selcom</string>
+    <string name="selcom_steps_1">Go to the nearest Selcom agent with your account no and amount of money you wish to pay and payments will be effected by Selecom Agent.</string>
+
+    <string name="title_banks">Paying through banks</string>
+    <string name="banks_barclays">BARCLAYS\nUse Account No. 0014003711 accompanied with DAWASCO Acc. No</string>
+    <string name="banks_crdb">CRDB\nUse Account No. 01J1021921900 accompanied with DAWASCO Acc. No.</string>
+    <string name="banks_nmb">NMB\nUse Account No. 20103300047 accompanied with DAWASCO Acc. No</string>
+    <string name="banks_boa">B.O.A\nUse Acc. No 02022460009 accompanied with DAWASCO Account No.</string>
+
+    <string name="title_sim_banking" translatable="false">Sim Banking</string>
+    <string name="sim_banking_crdb">SimBanking CRDB\n Dial *150*03#</string>
+    <string name="sim_banking_nbm">NMB-Mobile\n Dial *150*66#</string>
+    <string name="sim_banking_exim_mobile">Exim-Mobile\n Dial *150*11#.</string>
+    <string name="sim_banking_tpb_popote">TPB-Popote\n Dial *150*21#.</string>
+    <string name="sim_banking_acb">ACB-Mobile\nDial *150*10#</string>
+
+</resources>

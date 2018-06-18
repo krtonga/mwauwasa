@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">@color/iconTertiary</color>
+    <color name="colorAccent">@color/iconPrimary</color>
+
+    <color name="iconPrimary">#3953A4</color>
+    <color name="iconSecondary">#63CCEE</color>
+    <color name="iconTertiary">#64BDA1</color>
+
+    <color name="green">#116534</color>
+</resources>

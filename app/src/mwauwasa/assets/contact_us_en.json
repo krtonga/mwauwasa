@@ -1,0 +1,78 @@
+[
+  {
+    "name":"Headquarters",
+    "hq":"true",
+    "about":"Service hours of This office are: Monday to Friday (excluding public holiday): 07:30 AM to 4:30 PM",
+    "address":"Headquarter office located at Balewa Road",
+    "uri":"http://mwauwasa.go.tz/",
+    "email":"info@mwauwasa.go.tz",
+    "poBox":"Box 317, Mwanza TZ",
+    "phone":"+255 (028) 2500547",
+    "additionalPhones":[
+      {
+        "description":"+255 767080825 (office hours only)",
+        "phone":"+255 767080825"
+      },
+      {
+        "description":"TOLL FREE: Coming soon!",
+        "phone":""
+      }
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -2.30578,
+        32.5356
+      ]
+    }
+  },
+  {
+    "name":"Central Zone",
+    "hq":"true",
+    "about":"Service hours of This office are: Monday to Friday (excluding public holiday): 07:30 AM to 4:30 PM. OR Saturdays: 08:30 AM to 12:00 noon (Central Zone only)",
+    "address":"Intersection of Makongoro Road & Uhuru Road",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -2.30578,
+        32.5356
+      ]
+    }
+  },
+  {
+    "name":"Nyankato Buzuruga Zone",
+    "about":"Service hours of This office are: Monday to Friday (excluding public holiday): 07:30 AM to 4:30 PM",
+    "address":"Opposite Buzuruga Plaza",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -2.533574,
+        32.937745
+      ]
+    }
+  },
+  {
+    "name":"Makongoro Zone",
+    "about":"Service hours of This office are: Monday to Friday (excluding public holiday): 07:30 AM to 4:30 PM",
+    "address":"Near Sabasaba bus stop",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -2.471044,
+        32.911046
+      ]
+    }
+  },
+  {
+    "name":"Nyegezi zone",
+    "about":"Service hours of This office are: Monday to Friday (excluding public holiday): 07:30 AM to 4:30 PM",
+    "address":"Near Iseni bus stop along Mwanza Shinyanga Road",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -2.572970,
+        32.921156
+      ]
+    }
+  }
+]

@@ -1,5 +1,7 @@
 # MAJIFIX ANDROID APP
 
+> Note: Main documentation is found in the wiki at: https://github.com/CodeTanzania/open311-android/wiki
+
 ## About
 This repository contains android source code for the MajiFix app. This app is in production in Dar es Salaam, Tanzania, as the [DAWASCO app](https://play.google.com/store/apps/details?id=com.customerinfo). 
 

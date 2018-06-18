@@ -51,7 +51,31 @@ android {
     def COMPANY = "company"
     flavorDimensions COMPANY
     productFlavors {
-        // PUT YOUR COMPANY FLAVOR HERE.
+        mwauwasa {
+            dimension COMPANY
+
+            applicationIdSuffix ".mwuawasa"
+            versionNameSuffix "-mwuawasa"
+            versionCode 1
+            versionName "1.0.0"
+
+            resValue "string", "content_provider", "com.github.codetanzania.mwuawasa.provider"
+            ext {
+                buildconfigs = [
+                        [type: 'String',
+                         name: 'END_POINT',
+                         values: [debug: 'http://dawasco.herokuapp.com',
+                                  release: ''
+                         ]],
+
+                        [type: 'String',
+                         name: 'MAJIFIX_TOKEN',
+                         values: [debug: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU5ZTQ0OWQzODI0NjEwMDAwNGYzNDgzMSIsImlhdCI6MTUwODEzMzMzMSwiZXhwIjozMzA2NTczMzMzMSwiYXVkIjoib3BlbjMxMSJ9.3-a02oah-lmHFdqw1wMkbxIVa2qdA_D7ZTo0bGQQ_zE',
+                                  release: ''
+                         ]]
+                ]
+            }
+        }
     }
 
     // Each application variant has different BUILD CONFIGS. This allows dynamic creation of them.

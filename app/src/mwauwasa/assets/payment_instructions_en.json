@@ -1,0 +1,33 @@
+[{
+  "headline": "CHECK BILLS ONLINE\nDial *150*00#",
+  "steps": [
+    "Dial *152*00#",
+    "Select number 6 (MAJI)",
+    "Select number 4 (MWAUWASA)",
+    "Select number 1 (DENI LA MAJI)",
+    "Enter your MWAUWASA account number.",
+    "MWAUWASA will send you an SMS with your current bill."
+  ]
+},
+  {
+    "headline": "PAY VIA M-Pesa\nDial *150*00#",
+    "steps": [
+      "Dial *150*00# to start payment via M-Pesa",
+      "Select number 4 (MALIPO)",
+      "Select number 3 (CHAGUA KWENYE ORODHA)",
+      "Select number 7 (MALIPO YA MAJI)",
+      "Select number 3 (MWANZA-UWASA)",
+      "Select number 1 (WEKA NAMBA YA ACCOUNT)",
+      "Enter your MWAUWASA Account number (ACCOUNT NAMBA)",
+      "Weka kiasi",
+      "Weka namba ya siri",
+      "Bonyeza moja kithibitisha"
+    ]
+  },
+  {
+    "headline": "Pay at MWAUWASA Offices",
+    "steps": [
+      "You can pay at any MWAUWASA Office, during office hours.\nCheck the \"Contact Us\" page and click \"Address\" to get directions to the MWAUWASA Office nearest you."
+    ]
+  }
+]
