@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/home_action">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/action_go_home" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/create_actions">
+        <item
+            android:id="@+id/report_issue"
+            android:icon="@drawable/ic_nav_report_issue"
+            android:title="@string/action_report_issue" />
+
+        <item
+            android:id="@+id/request_new_connection"
+            android:icon="@drawable/ic_nav_new_connection"
+            android:title="@string/action_request_new_connection"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/view_actions">
+
+        <item
+            android:id="@+id/my_bill"
+            android:icon="@drawable/ic_nav_my_bill"
+            android:title="@string/action_see_my_bill"/>
+        <item
+            android:id="@+id/payment_details"
+            android:title="@string/action_view_payment_details"
+            android:icon="@drawable/ic_nav_how_do_i_pay"/>
+
+        <item
+            android:id="@+id/contact_us"
+            android:title="@string/action_contact_company"
+            android:icon="@drawable/ic_nav_contact_us"/>
+
+        <item
+            android:id="@+id/tariffs"
+            android:title="@string/action_view_tariffs"
+            android:icon="@drawable/ic_nav_tariffs"/>
+    </group>
+
+    <group android:id="@+id/extras"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/faqs"
+            android:icon="@drawable/ic_nav_faq"
+            android:title="@string/action_view_faqs"/>
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_nav_settings"
+            android:title="@string/action_settings"/>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_nav_exit_wrapper"
+            android:title="@string/action_logout"/>
+    </group>
+</menu>

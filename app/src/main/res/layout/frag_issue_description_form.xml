@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/default_padding"
+            android:paddingEnd="@dimen/default_padding">
+
+            <TextView
+                android:inputType="none"
+                android:id="@+id/tv_LabelIssueTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_issue_title"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/et_IssueTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="@string/text_issue_category_hint"
+                android:background="@drawable/bg_default_text_edit"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+            <TextView
+                android:inputType="none"
+                android:id="@+id/tv_LabelIssueLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_issue_location"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/et_IssueLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="@string/text_issue_location_hint"
+                android:background="@drawable/bg_default_text_edit"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+            <TextView
+                android:id="@+id/tv_PhotosLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_issue_photos"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_Photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:layout_margin="16dp">
+
+                <FrameLayout
+                    android:id="@+id/fr_Attachment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:visibility="gone"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center_vertical|start"/>
+
+                <ImageButton
+                    android:id="@+id/btn_addImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@drawable/bg_add_item"
+                    android:foreground="?android:attr/selectableItemBackground" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_IssueDescriptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_issue_description"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/et_IssueDescription"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:padding="10dp"
+                android:gravity="top|start"
+                android:hint="@string/text_issue_description_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_default_text_edit" />
+
+            <Button
+                android:id="@+id/btn_SubmitIssue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                style="@style/CallToActionButton"
+                android:text="@string/text_submit"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

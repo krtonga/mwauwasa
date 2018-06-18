@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout android:id="@+id/app_barLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_toolbar_layout"
+        style="@style/Toolbar"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/toolbar_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:foregroundGravity="center"
+            android:padding="8dp"
+            android:paddingEnd="46dp"
+            android:scaleType="fitCenter"
+            app:layout_collapseMode="pin"
+            app:srcCompat="@drawable/ic_company_logo"
+            tools:ignore="ContentDescription" />
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

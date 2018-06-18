@@ -1,0 +1,132 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.github.codetanzania"
+        minSdkVersion 17
+        targetSdkVersion 25
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        resConfigs "en", "sw"
+    }
+    lintOptions {
+        abortOnError false
+        disable 'RestrictedApi'
+    }
+
+    // BUILD TYPE is generic, and is for all company brands.
+    buildTypes {
+        // RELEASE will be used for production. The application is minimized and obfuscated.
+        release {
+            minifyEnabled true
+            shrinkResources false
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            // TO TEST PROGUARD OR THE RELEASE ENDPOINT uncomment the following:
+            // signingConfig signingConfigs.proguard
+        }
+        // DEBUG is used for development, where being able to build and dubug quickly is necessary.
+        debug {
+            applicationIdSuffix ".develop"
+            minifyEnabled false
+        }
+    }
+    // Sometimes, things break when the code is minimized. Therefore, we have provided a test config.
+    // This SIGNING CONFIG should be used for TESTING PURPOSES ONLY!
+    signingConfigs {
+        proguard {
+            storeFile file("droid-keystore")
+            storePassword "droid-keystore"
+            keyAlias "droid-keystore"
+            keyPassword "droid-keystore"
+        }
+    }
+
+    // FLAVORS are used for different company brandings of the application. Please put anything
+    // specific to your app brand here, including versionCodes, versionNames, tokens & endpoints.
+    def COMPANY = "company"
+    flavorDimensions COMPANY
+    productFlavors {
+        // PUT YOUR COMPANY FLAVOR HERE.
+    }
+
+    // Each application variant has different BUILD CONFIGS. This allows dynamic creation of them.
+    applicationVariants.all { variant ->
+        // get the COMPANY dimension flavor
+        def companies = variant.getProductFlavors()
+                .findAll({ flavor -> flavor.dimension == COMPANY})
+        if (companies.size() > 0) {
+            def company = companies.get(0)
+            // loop over the fields and make appropriate buildConfigField
+            company.ext.buildconfigs.each { field ->
+                def fldType = field['type']
+                def fldName = field['name']
+                def fldValues = field['values']
+
+                // get debug/release specific value from values array
+                def fldSpecificValue = fldValues[variant.getBuildType().name]
+
+                // add quotes for strings
+                if (fldType == 'String') {
+                    fldSpecificValue = '\"' + fldSpecificValue + '\"'
+                }
+
+                // create build config
+                variant.buildConfigField fldType, fldName, fldSpecificValue
+            }
+        } else {
+            // This is used in the default majifix config
+            resValue "string", "content_provider", "com.github.codetanzania.majifix.provider"
+            variant.buildConfigField "String", "END_POINT", '"http://dawasco.herokuapp.com"'
+            variant.buildConfigField "String", "MAJIFIX_TOKEN", '"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU5ZTQ0OWQzODI0NjEwMDAwNGYzNDgzMSIsImlhdCI6MTUwODEzMzMzMSwiZXhwIjozMzA2NTczMzMzMSwiYXVkIjoib3BlbjMxMSJ9.3-a02oah-lmHFdqw1wMkbxIVa2qdA_D7ZTo0bGQQ_zE"'
+        }
+    }
+
+    // ASSETS are used to store company specific json files
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library-core')
+
+    // testing
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.robolectric:robolectric:3.5.1'
+    testImplementation 'org.robolectric:shadows-support-v4:3.3.2'
+
+    // analytics & ci
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true
+    }
+
+    // Verifying phone numbers can easily become a hassle. This lib from google saves a day
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.0.0'
+
+    // google support
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.android.support:support-v4:25.4.0'
+    implementation 'com.android.support:recyclerview-v7:25.4.0'
+    implementation 'com.android.support:cardview-v7:25.4.0'
+    implementation 'com.android.support:design:25.4.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+    // location
+    implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2@aar') { transitive = true }
+    implementation('com.mapbox.mapboxsdk:mapbox-android-services:2.2.0@aar') { transitive = true }
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.1.0'
+
+    // ui
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.vipulasri:timelineview:1.0.5'
+    implementation 'com.github.apl-devs:appintro:v4.2.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+}

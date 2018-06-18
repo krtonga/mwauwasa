@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="tz.co.codetanzania">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" tools:node="replace"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- We're going to use the permission to write to the external public directory.
+        The WRITE_EXTERNAL_STORAGE permission implicitly grants the READ_EXTERNAL_STORAGE
+        permission. So in this case, it suffices to write just this one liner
+     -->
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- The app can still run regardless absence of camera -->
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="true"
+        android:name="com.github.codetanzania.MajifixApp"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme">
+
+        <!--
+            We need to do reverse geo-coding. The process which takes longer to complete,
+            kinda makes it unsuitable to use in UI thread. AsyncTask would do it, but consider
+            simple scenarios which might make the requested to be cancelled/re-issued un-necessarily
+            such as screen rotation.
+
+            Using IntentService seems our best bet. And here we go
+        -->
+        <service android:name="com.github.codetanzania.feature.report.FetchAddressIntentService"
+            android:exported="false"/>
+
+
+        <!--
+            The Application targeting Android 7.0+, passing file://<path> URIs across package boundary
+            causes a FileUriExposedException (Reasonably ok to conceal app internals). In such occasion,
+            choosing FileProvider to pass the URIs across boundaries is not an option.
+
+            NOTE: This overrides the provider from the maji-fix library.
+        -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/content_provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.github.codetanzania.feature.logincitizen.UserDetailsActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
+        <activity android:name="com.github.codetanzania.feature.list.IssueListActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:screenOrientation="portrait"
+            android:label="@string/title_issue_list"/>
+
+        <activity android:name="com.github.codetanzania.feature.settings.SettingsActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:screenOrientation="portrait"
+            android:label="@string/settings_title"/>
+
+        <!-- Splash screen activity performs authorization by requesting new token from the server -->
+        <activity android:name="com.github.codetanzania.feature.initialization.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Edit user profile -->
+        <activity android:name="com.github.codetanzania.feature.settings.EditSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+
+        <activity android:name="com.github.codetanzania.feature.ErrorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.github.codetanzania.feature.issuedetails.IssueProgressActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- start the activity -->
+        <activity android:name="com.github.codetanzania.feature.intro.AppIntroActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.github.codetanzania.feature.home.MainActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.github.codetanzania.feature.company.NavItemActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"/>
+
+        <activity android:name="com.github.codetanzania.feature.company.billing.BillingActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"/>
+
+        <activity android:name="com.github.codetanzania.feature.logincitizen.OTPVerificationActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"/>
+
+        <activity android:name="com.github.codetanzania.feature.report.ReportIssueActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar">
+
+            <!-- Return result(s) back to the parent activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCffLfUtiMHteN7KKyX1sUWx8bRpcvdTwI"/>
+
+        <meta-data android:name="net.hockeyapp.android.appIdentifier"
+            android:value="923df58094c24a4090e38d9c8ec9c967" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="bf528a1fe470e56dcaa82142d9685f2e060c64f4" />
+
+    </application>
+
+</manifest>

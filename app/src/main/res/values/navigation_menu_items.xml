@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_go_home">Home</string>
+    <string name="action_report_issue">Report Issue</string>
+    <string name="action_see_my_bill">See my bill</string>
+    <string name="action_view_payment_details">How do I pay</string>
+    <string name="action_contact_company">Contact Us</string>
+    <string name="action_view_tariffs">Tariffs</string>
+    <string name="action_view_faqs">FAQs</string>
+</resources>

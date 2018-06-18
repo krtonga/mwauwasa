@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:id="@+id/tv_tariffs_customer_type"
+            style="@style/CompanyCardText.Bold" />
+
+        <TextView
+            android:id="@+id/tv_tariffs_quantity"
+            style="@style/CompanyCardText"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_tariffs_cost"
+            style="@style/CompanyCardText"
+            android:textAlignment="viewEnd" />
+    </TableRow>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This card presents a static Open Streets Map rendered to show a particular GeoPoint -->
+<android.support.v7.widget.CardView android:id="@+id/cardView_Osm"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    app:cardCornerRadius="2dp"
+    app:elevation="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <include layout="@layout/map_dar" />
+
+</android.support.v7.widget.CardView>

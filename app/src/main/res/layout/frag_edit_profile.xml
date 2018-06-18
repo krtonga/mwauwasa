@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- full name -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_UserName"
+        android:paddingTop="24dp"
+        style="@style/UserInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+            style="@style/UserInput"
+            android:id="@+id/et_userName"
+            android:hint="@string/text_user_name"
+            android:nextFocusDown="@+id/et_phoneNumber"
+            android:nextFocusForward="@id/et_phoneNumber">
+
+            <requestFocus />
+        </android.support.design.widget.TextInputEditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Phone number (Including zip-code) -->
+    <LinearLayout
+        android:id="@+id/ll_UserPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_AreaCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            style="@style/UserInputLayout">
+
+            <android.support.design.widget.TextInputEditText
+                style="@style/UserInput"
+                android:id="@+id/et_AreaCode"
+                android:text="@string/default_area_code"
+                android:inputType="number"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:enabled="false"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_PhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            style="@style/UserInputLayout">
+
+            <android.support.design.widget.TextInputEditText
+                style="@style/UserInput"
+                android:id="@+id/et_phoneNumber"
+                android:hint="@string/et_phone_number"
+                android:inputType="phone"
+                android:maxLength="9"
+                android:nextFocusDown="@+id/et_accountNo"
+                android:nextFocusForward="@id/et_accountNo"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- account number (Hidden by default) -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_accountNo"
+        style="@style/UserInputLayout"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputEditText
+            style="@style/UserInput"
+            android:id="@+id/et_accountNo"
+            android:hint="@string/et_account_number"
+            android:nextFocusDown="@+id/et_email"
+            android:nextFocusForward="@id/et_email" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- email address (Hidden by default) -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_email"
+        style="@style/UserInputLayout"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputEditText
+            style="@style/UserInput"
+            android:id="@+id/et_email"
+            android:hint="@string/email_label"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!-- Language Preference (Hidden by default) -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_UserDefaultLanguage"
+        style="@style/UserInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_DefaultUserLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/text_user_default_language"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

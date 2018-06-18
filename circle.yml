@@ -1,0 +1,42 @@
+#Install android build tools, platforms
+#Supported versions here https://circleci.com/docs/android
+dependencies:
+    override:
+        - echo y | android update sdk --no-ui --all --filter tools,build-tools-25.0.3,platform-tools,extra-android-m2repository,extra-google-android-support,android-25
+        - chmod +x gradlew
+        - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
+
+#Pull any submodules
+checkout:
+  post:
+    - git submodule init
+    - git submodule update
+
+#-PdisablePreDex is a must else gradle just dies due to memory limit
+#Replace
+test:
+    override:
+#        - (./gradlew clean assemble -PdisablePreDex):
+#            timeout: 360
+#        - cp -r ${HOME}/${CIRCLE_PROJECT_REPONAME}/app/build/outputs/apk/ $CIRCLE_ARTIFACTS
+
+        # run unit tests.
+        - ./gradlew test
+
+#Deploy when tests pass
+deployment:
+    master:
+        branch: develop
+        commands:
+            - chmod +x gradlew; ./gradlew clean assembleProguard:
+                timeout: 5000
+            - COMMIT=$(git log --oneline -1)
+            - >
+              curl
+              -F "status=2"
+              -F "notify=1"
+              -F "notes=Travis commit: ${COMMIT}."
+              -F "notes_type=0"
+              -F "ipa=@app/build/outputs/apk/app-debug.apk"
+              -H "X-HockeyAppToken: ${HOCKEYAPP_TOKEN}"
+              https://rink.hockeyapp.net/api/2/apps/${HOCKEYAPP_APP_ID}/app_versions/upload

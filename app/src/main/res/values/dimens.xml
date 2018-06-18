@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Components -->
+    <dimen name="p_dialog_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="thumbnail_width">92dp</dimen>
+    <dimen name="thumbnail_height">92dp</dimen>
+    <dimen name="navigation_view_width">300dp</dimen>
+
+    <!-- Common Dimensions -->
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="activity_horizontal_margin">6dp</dimen>
+    <dimen name="elevation_nav_drawer">5dp</dimen>
+
+    <dimen name="small_text">10sp</dimen>
+    <dimen name="normal_text">14sp</dimen>
+    <dimen name="medium_text">17sp</dimen>
+    <dimen name="large_text">20sp</dimen>
+
+    <dimen name="company_card_horiz_margin">8dp</dimen>
+    <dimen name="company_card_vert_margin">4dp</dimen>
+</resources>

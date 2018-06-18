@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--These are strings that should be overwritten in your company flavor. Create custom values in
+        '<flavor-name>/res/values/strings.xml' & '<flavor-name>/res/values-sw/strings.xml'-->
+
+    <string name="app_name" tools:override="true" translatable="false">…</string>
+    <string name="map_cameraTargetLat" translatable="false">…</string>
+    <string name="map_cameraTargetLng" translatable="false">…</string>
+    <string name="map_ne_lat" translatable="false">…</string>
+    <string name="map_ne_lng" translatable="false">…</string>
+    <string name="map_sw_lat" translatable="false">…</string>
+    <string name="map_sw_lng" translatable="false">…</string>
+
+    <!--The following must be overrode for all languages (currently en & sw) -->
+    <string name="tariffs_description_water_services">…</string>
+    <string name="tariffs_description_sewerage">…</string>
+    <string name="new_connection_default_description">…</string>
+    <string name="new_connection_next_steps">…</string>
+
+
+    <!--These are generic and can be used by any app. For a custom string, place values in
+        '<flavor-name>/res/values/strings.xml' & '<flavor-name>/res/values-sw/strings.xml' -->
+
+    <string name="mapbox_style" translatable="false">mapbox://styles/mapbox/streets-v10</string>
+    <string name="et_phone_number">Phone number</string>
+    <string name="text_user_name">Full name</string>
+    <string name="txt_loading" translatable="false">&#8230;</string>
+    <string name="msg_server_error">Error loading data from the server</string>
+    <string name="action_reload">Try Again</string>
+    <string name="action_view_account">User Account</string>
+    <string name="text_user_phone">Phone number</string>
+    <string name="text_empty_phone">Not provided</string>
+    <string name="text_profile_desc">Profile picture</string>
+    <string name="action_logout">Log out</string>
+    <string name="text_confirm_logout">Are you sure you want to logout?</string>
+    <string name="action_stay">Stay</string>
+    <string name="text_empty_issues">You have not reported any issue.</string>
+    <string name="default_area_code" translatable="false">255</string>
+    <string name="et_account_number">Account #</string>
+    <string name="text_capture_picture">Capture Picture</string>
+    <string name="text_issue_description">Issue Description</string>
+    <string name="text_issue_category">Issue Category</string>
+    <string name="title_loading_services">Loading Services</string>
+    <string name="text_loading_services">Loading open311Services. Please wait&#8230;</string>
+    <string name="text_check_mark" translatable="false">✔</string>
+    <string name="location_not_available">Location Not Available</string>
+    <string name="invalid_lat_long_used">Invalid longitude or latitude</string>
+    <string name="no_address_found">No address found</string>
+    <string name="address_found">Address found</string>
+    <string name="warning_empty_issue_body">Cannot post issue without description. Please provide descriptions!</string>
+    <string name="warning_no_reporter">Your user details could not be found. Please update your user profile and try again.</string>
+    <string name="text_opening_ticket">Posting Issue to %1$s</string>
+    <string name="msg_network_error">Network Error</string>
+    <string name="text_item_saved">Account Updated</string>
+    <string name="text_issue_tickets">Issues</string>
+    <string name="intro_title_app_welcome">Welcome to %1$s!</string>
+    <string name="intro_desc_app_main_features">See a water leak? Don\'t have water? Problem with your meter? Don\'t know how much you owe this month?\n\nWe can help!</string>
+    <string name="intro_title_report_issue">Report an issue</string>
+    <string name="intro_report_issue">Select the type of problem, add location, a photo, and description. %1$s will be informed immediately, and you will receive updates when the problem is fixed!</string>
+    <string name="intro_title_see_your_bill">See your bill</string>
+    <string name="intro_desc_see_your_bill">See what you owe and check your water consumption history.\n\nReady to start?</string>
+    <string name="text_retry">Retry</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_http_error">Http Error occurred. Do you want to report this incident? </string>
+    <string name="text_report">Yes, Report</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings_title">SETTINGS</string>
+    <string name="status_changes">Status Changes</string>
+    <string name="text_received_status">Issue ticket opened</string>
+    <string name="tab_all_issues">All Issues</string>
+    <string name="tab_open_issues">Open</string>
+    <string name="tab_closed_issues">Closed</string>
+    <string name="error_username_required">User name is required.</string>
+    <string name="error_phone_required">Phone number is required.</string>
+    <string name="error_account_no_required">Account number is required.</string>
+    <string name="error_email_required">Email is required.</string>
+    <string name="error_password_required">Password is required.</string>
+    <string name="text_close_status">Issue ticket closed</string>
+    <string name="text_pending_description">Issue is still not resolved</string>
+    <string name="text_status">Issue Status</string>
+    <string name="action_done">Save</string>
+    <string name="registration_done">Save and Continue</string>
+    <string name="registration_title">Registration</string>
+    <string name="registration_description">Submit issues. You will be notified when problems are fixed.</string>
+    <string name="text_issue_title">Issue Category</string>
+    <string name="text_issue_photos">Photos</string>
+    <string name="text_image_src_browse_option">Use existing photo</string>
+    <string name="text_image_src_camera_option">Take new photo</string>
+    <string name="title_issue_description">Explain what\'s wrong</string>
+    <string name="text_issue_description_hint">Eg. This leakage has been here for three weeks and…</string>
+    <string name="text_issue_location_hint">e.g. Kanisani Buza</string>
+    <string name="text_submit">Submit</string>
+    <string name="content_description_skip_introduction">Skip Introduction</string>
+    <string name="content_description_intro_back">See Previous Slide</string>
+    <string name="content_description_intro_next">See Next Slide</string>
+    <string name="content_description_intro_done">Begin</string>
+    <string name="title_edit_profile">EDIT PROFILE</string>
+    <string name="warning_io_failure">Cannot cache photo items.</string>
+    <string name="location_permission_dialog_title">Location Permission Needed</string>
+    <string name="location_permission_dialog_description">Without location, %1$s will be unable to help you. Please share your location to submit an issue.</string>
+    <string name="location_permission_denied">%1$s needs a location to find the problem. GPS is required. Enable location and try again.</string>
+    <string name="location_marker_title">Problem Location</string>
+    <string name="location_marker_description">This is where the problem is</string>
+    <string name="default_coordinate_display">Coordinates unknown</string>
+    <string name="default_address_display">Location unknown</string>
+    <string name="coordinate_display" translatable="false">Latitude: %1$s, Longitude: %2$s</string>
+    <string name="label_location_selector">Location of Problem:</string>
+    <string name="use_location">Use Location</string>
+    <string name="change_address">Change Address</string>
+    <string name="title_issue_list">Reported Issues</string>
+    <string name="action_select_issue_category">Select issue category</string>
+    <string name="action_close">Close</string>
+    <string name="action_select">Select</string>
+    <string name="service_type_item_content_description">Service Report</string>
+    <string name="text_issue_location">Location of the problem</string>
+    <string name="text_unknown_location">Unknown location</string>
+    <string name="title_default_language">Default Language</string>
+    <string name="text_user_default_language">Primary language</string>
+    <string name="title_select_default_language">Choose Your Default Language</string>
+    <string name="text_choose">Select Option</string>
+    <string name="title_take_photo_permission">Why We Need A Picture?</string>
+    <string name="text_take_photo_permission">A picture is not necessary, but it can assist us to identify nature of the problem</string>
+    <string name="action_allow_take_photo">Grant Permission</string>
+    <string name="action_open_drawer">Open</string>
+    <string name="text_close_drawer">Close</string>
+    <string name="login_account_hint">Account No</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_title">Sign in</string>
+    <string name="login_done">Continue</string>
+    <string name="user_details_title">User Details</string>
+    <string name="company_registration_done">GET MY BILL</string>
+    <string name="bill_mini_statement_title">Billing Statements</string>
+    <string name="bill_current_title">Current Bill</string>
+    <string name="payment_instructions_title">Payment Instructions</string>
+    <string name="dialog_post_issue_success_message">Your issue has been received. The ticket ID for the issue is %s</string>
+    <string name="dialog_post_issue_pos_btn">View Issue Status</string>
+    <string name="bill_chart_label">Water Unit Consumed (m³)</string>
+    <string name="action_current">Current</string>
+    <string name="bill_current_card1_header">Statement Number</string>
+    <string name="bill_current_card2_header">Customer Name\nAccount #</string>
+    <string name="bill_current_card3_header">Date of Reading\n\nPrevious Reading\nCurrent Reading\nUnits Consumed"</string>
+    <string name="bill_current_card4_header">Opening Balance\nPeriod Charges\nClosing Balance</string>
+    <string name="bill_due_header">Amount Due</string>
+    <string name="bill_current_card2" translatable="false">%s\n%s</string>
+    <string name="bill_current_card3" translatable="false">%s\n\n%s m³\n%s m³\n%s m³</string>
+    <string name="bill_current_card4" translatable="false">Tsh %s\nTsh %s\nTsh %s</string>
+    <string name="bill_due_value">Tsh %s</string>
+    <string name="action_company_register">Register</string>
+    <string name="email_label">Email</string>
+    <string name="text_tariff_quantity">Quantity</string>
+    <string name="text_sample_tariff_vol" translatable="false">0 – 5 (m3)</string>
+    <string name="text_tariff_title">Tariff</string>
+    <string name="text_sample_tariff_amount" translatable="false">Tsh. 1,106</string>
+    <string name="text_sample_tariff_header">metered domestic</string>
+    <string name="title_tariffs">Tariffs</string>
+    <string name="text_email">Email</string>
+    <string name="text_contact_us">Contact Us</string>
+    <string name="call_center_number" translatable="false">0800110064</string>
+    <string name="text_call_company">Call %1$s: \n%2$s</string>
+    <string name="text_call">Call</string>
+    <string name="action_call">Call:</string>
+    <string name="action_visit_web">Visit web:</string>
+    <string name="action_visit_location">Address:</string>
+    <string name="action_get_directions">Get Directions</string>
+    <string name="action_get_email">Get Email</string>
+    <string name="email_default_subject">Contact Us - App</string>
+    <string name="email_default_body"></string>
+    <string name="error_first_and_last_required">Please enter first and last name</string>
+    <string name="error_phone_number_starts_with_0">Please remove the 0</string>
+    <string name="error_phone_invalid">Phone number is invalid</string>
+    <string name="title_faqs">FAQs</string>
+    <string name="title_quantity">Quantity</string>
+    <string name="title_tariff">Tariff</string>
+    <string name="home_action_report">REPORT NEW ISSUE</string>
+    <string name="home_action_see_list">VIEW REPORTED ISSUES</string>
+    <string name="home_action_see_bill">SEE MY BILL</string>
+    <string name="text_issue_category_hint">e.g. Water Leakage</string>
+    <string name="spinner_label">See Bill for</string>
+    <string name="text_ward">Ward</string>
+    <string name="text_street">Street</string>
+    <string name="action_submit_request">Submit Request</string>
+    <string name="home_request_new_connection">NEW CONNECTION</string>
+    <string name="action_request_new_connection">New connection</string>
+    <string name="title_request_new_connection">New connection</string>
+    <string name="action_help">Help</string>
+    <string name="text_new_connection_info">Fill and submit this form in order to request a new water connection.</string>
+    <string name="error_no_network_message">Your device is not connected to the Internet. Please, resolve connection problem and try again!</string>
+    <string name="text_scroll_up_down_instruction">Scroll up/down to view more categories</string>
+    <string name="error_new_connection">Please try again later.</string>
+    <string name="error_street_required">Street is required</string>
+    <string name="error_ward_required">Ward name is required</string>
+    <string name="title_otp_verification">We\'ve sent an SMS to your phone containing a verification code. Please wait for the SMS to be received&#8230;</string>
+    <string name="text_hint_phone_number"><![CDATA[Waiting Verification Code…]]></string>
+    <string name="text_count_down" translatable="false">01:00</string>
+    <string name="text_retry_otp_verification">Send Again</string>
+    <string name="error_delivering_sms">An error has occurred while delivering your message.</string>
+    <string name="msg_reason_to_read_sms">We need to verify your phone number by sending an SMS to your device. Please grant the permission in order to proceed&#8230;</string>
+    <string name="text_grant_read_sms_permission">Grant Permission</string>
+    <string name="text_deny_read_sms_permission">Deny Permission</string>
+    <string name="text_change_phone_number">Change number</string>
+    <string name="text_invalid_verification_code">Invalid Verification Code!</string>
+    <string name="title_otp_requesting_permission">Requesting Permission from user</string>
+    <string name="msg_application_error">Application was unable to submit your request.</string>
+    <string name="msg_customer_registration_error">Account number is required.</string>
+    <string name="msg_billing_error_invalid_account">Invalid Account Number.</string>
+    <string name="msg_billing_error_not_verified">Your phone number is not authorized to see this account. The account owner has been notified.</string>
+    <string name="msg_account_not_exists">Account does not exist!</string>
+    <string name="tariffs_title_water_services">WATER SERVICES</string>
+    <string name="tariffs_title_sewerage_services">SEWERAGE SERVICES</string>
+    <string name="tariffs_sewerage_call_for_action">Please call for more information.</string>
+    <string name="tariffs_sewerage_call_for_action_green_word">call</string>
+    <string name="action_mail">Mail to:</string>
+</resources>

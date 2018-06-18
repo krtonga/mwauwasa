@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_JurisdictionPhone"
+    style="@style/CompanySectionLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        style="@style/CompanyCardSectionIcon"
+        app:srcCompat="@drawable/ic_phone_blue"/>
+
+    <TextView
+        android:id="@+id/tv_JurisdictionPhone"
+        style="@style/CompanyCardLabel"
+        android:text="@string/action_call"/>
+
+    <TextView
+        android:id="@+id/tv_JurisdictionPhoneContent"
+        style="@style/CompanyCardText.Actionable"
+        android:layout_below="@+id/tv_JurisdictionPhone"/>
+
+</RelativeLayout>

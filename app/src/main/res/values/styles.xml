@@ -1,0 +1,236 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/iconPrimary</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/iconPrimary</item>
+    </style>
+
+    <style name="Toolbar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="layout_collapseMode">pin</item>
+        <item name="elevation">3dp</item>
+    </style>
+
+    <style name="Heading">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/iconPrimary</item>
+    </style>
+
+    <!-- Material TextInputLayout -->
+    <style name="StyledEditTextTheme" parent="@android:style/TextAppearance">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">#c5c5c5</item>
+        <item name="colorControlHighlight">#c5c5c5</item>
+        <item name="android:textColor">#c5c5c5</item>
+    </style>
+
+    <style name="UserInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">#c1c2c4</item>
+        <item name="hintTextAppearance">@style/StyledEditTextTheme</item>
+        <item name="errorEnabled">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="UserInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- SplashScreen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TitleTextAppearance">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding_title_text_appearance</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextContentAppearance">
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- IntroScreen themes -->
+    <style name="IntroButton" parent="AppIntroButtonStyleCompat">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+    </style>
+
+    <!-- Home Page -->
+    <style name="HomeCoordinatorLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="HomeNestedScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">?android:attr/actionBarSize</item>
+    </style>
+
+    <style name="HomeActionGroup">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="HomeImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">150dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="HomeLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/iconPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="NavDrawers">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:maxWidth">@dimen/navigation_view_width</item>
+        <item name="elevation">@dimen/elevation_nav_drawer</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="menu">@menu/menu_navigation_drawer</item>
+    </style>
+
+    <!-- Items Card View -->
+
+    <style name="ItemCardTextView" parent="CardView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="ItemCardTextView.Medium">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="CallToActionButton" parent="Widget.AppCompat.Button">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:background">@color/iconPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Company Cards-->
+    <style name="CompanyCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="CompanyCard.Billing">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="CompanyCardHeader" parent="TextContentAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/iconPrimary</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">@dimen/company_card_horiz_margin</item>
+        <item name="android:paddingEnd">@dimen/company_card_horiz_margin</item>
+    </style>
+
+    <style name="CompanyCardHeader.Gray" >
+        <item name="android:textColor">@color/colorHeavyGray</item>
+    </style>
+
+    <style name="CompanySectionLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/company_card_horiz_margin</item>
+        <item name="android:paddingEnd">@dimen/company_card_horiz_margin</item>
+        <item name="android:paddingTop">@dimen/company_card_vert_margin</item>
+        <item name="android:paddingBottom">@dimen/company_card_vert_margin</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="CompanyCardSectionIcon">
+        <item name="android:id">@id/icon</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingEnd">@dimen/default_padding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="CompanyCardLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_toEndOf">@id/icon</item>
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/colorHeavyGray</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="CompanyCardText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/icon</item>
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:textColor">@color/colorHeavyGray</item>
+    </style>
+
+    <style name="CompanyCardText.Bold" parent="CompanyCardText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CompanyCardText.Actionable" parent="CompanyCardText">
+        <item name="android:textColor">@color/iconPrimary</item>
+    </style>
+
+
+    <dimen name="drawable_padding_title_text_appearance">5dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_photo_item__src_media_store"
+        android:title="@string/text_image_src_browse_option"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item_photo_item__src_camera"
+        android:title="@string/text_image_src_camera_option"
+        app:showAsAction="ifRoom" />
+</menu>
