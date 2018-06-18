@@ -26,7 +26,7 @@
     <string name="et_phone_number">Phone number</string>
     <string name="text_user_name">Full name</string>
     <string name="txt_loading" translatable="false">&#8230;</string>
-    <string name="msg_server_error">Error loading data from the server</string>
+    <string name="msg_server_error">Eror loading data from the server</string>
     <string name="action_reload">Try Again</string>
     <string name="action_view_account">User Account</string>
     <string name="text_user_phone">Phone number</string>
