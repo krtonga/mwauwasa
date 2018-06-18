@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-core/library-core.iml" filepath="$PROJECT_DIR$/library-core/library-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-ui/library-ui.iml" filepath="$PROJECT_DIR$/library-ui/library-ui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/open311-android.iml" filepath="$PROJECT_DIR$/open311-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mwauwasa.iml" filepath="$PROJECT_DIR$/mwauwasa.iml" />
     </modules>
   </component>
 </project>
