@@ -11,6 +11,8 @@
     <string name="map_ne_lng" translatable="false">…</string>
     <string name="map_sw_lat" translatable="false">…</string>
     <string name="map_sw_lng" translatable="false">…</string>
+    <string name="call_center_number" translatable="false">…</string>
+
 
     <!--The following must be overrode for all languages (currently en & sw) -->
     <string name="tariffs_description_water_services">…</string>
@@ -41,9 +43,6 @@
     <string name="text_capture_picture">Capture Picture</string>
     <string name="text_issue_description">Issue Description</string>
     <string name="text_issue_category">Issue Category</string>
-    <string name="title_loading_services">Loading Services</string>
-    <string name="text_loading_services">Loading open311Services. Please wait&#8230;</string>
-    <string name="text_check_mark" translatable="false">✔</string>
     <string name="location_not_available">Location Not Available</string>
     <string name="invalid_lat_long_used">Invalid longitude or latitude</string>
     <string name="no_address_found">No address found</string>
@@ -62,12 +61,9 @@
     <string name="intro_desc_see_your_bill">See what you owe and check your water consumption history.\n\nReady to start?</string>
     <string name="text_retry">Retry</string>
     <string name="text_cancel">Cancel</string>
-    <string name="text_http_error">Http Error occurred. Do you want to report this incident? </string>
-    <string name="text_report">Yes, Report</string>
     <string name="action_settings">Settings</string>
     <string name="settings_title">SETTINGS</string>
     <string name="status_changes">Status Changes</string>
-    <string name="text_received_status">Issue ticket opened</string>
     <string name="tab_all_issues">All Issues</string>
     <string name="tab_open_issues">Open</string>
     <string name="tab_closed_issues">Closed</string>
@@ -75,9 +71,6 @@
     <string name="error_phone_required">Phone number is required.</string>
     <string name="error_account_no_required">Account number is required.</string>
     <string name="error_email_required">Email is required.</string>
-    <string name="error_password_required">Password is required.</string>
-    <string name="text_close_status">Issue ticket closed</string>
-    <string name="text_pending_description">Issue is still not resolved</string>
     <string name="text_status">Issue Status</string>
     <string name="action_done">Save</string>
     <string name="registration_done">Save and Continue</string>
@@ -96,7 +89,6 @@
     <string name="content_description_intro_next">See Next Slide</string>
     <string name="content_description_intro_done">Begin</string>
     <string name="title_edit_profile">EDIT PROFILE</string>
-    <string name="warning_io_failure">Cannot cache photo items.</string>
     <string name="location_permission_dialog_title">Location Permission Needed</string>
     <string name="location_permission_dialog_description">Without location, %1$s will be unable to help you. Please share your location to submit an issue.</string>
     <string name="location_permission_denied">%1$s needs a location to find the problem. GPS is required. Enable location and try again.</string>
@@ -124,10 +116,7 @@
     <string name="action_allow_take_photo">Grant Permission</string>
     <string name="action_open_drawer">Open</string>
     <string name="text_close_drawer">Close</string>
-    <string name="login_account_hint">Account No</string>
-    <string name="login_password_hint">Password</string>
     <string name="login_title">Sign in</string>
-    <string name="login_done">Continue</string>
     <string name="user_details_title">User Details</string>
     <string name="company_registration_done">GET MY BILL</string>
     <string name="bill_mini_statement_title">Billing Statements</string>
@@ -137,26 +126,12 @@
     <string name="dialog_post_issue_pos_btn">View Issue Status</string>
     <string name="bill_chart_label">Water Unit Consumed (m³)</string>
     <string name="action_current">Current</string>
-    <string name="bill_current_card1_header">Statement Number</string>
-    <string name="bill_current_card2_header">Customer Name\nAccount #</string>
-    <string name="bill_current_card3_header">Date of Reading\n\nPrevious Reading\nCurrent Reading\nUnits Consumed"</string>
-    <string name="bill_current_card4_header">Opening Balance\nPeriod Charges\nClosing Balance</string>
     <string name="bill_due_header">Amount Due</string>
-    <string name="bill_current_card2" translatable="false">%s\n%s</string>
-    <string name="bill_current_card3" translatable="false">%s\n\n%s m³\n%s m³\n%s m³</string>
-    <string name="bill_current_card4" translatable="false">Tsh %s\nTsh %s\nTsh %s</string>
     <string name="bill_due_value">Tsh %s</string>
-    <string name="action_company_register">Register</string>
     <string name="email_label">Email</string>
-    <string name="text_tariff_quantity">Quantity</string>
-    <string name="text_sample_tariff_vol" translatable="false">0 – 5 (m3)</string>
-    <string name="text_tariff_title">Tariff</string>
-    <string name="text_sample_tariff_amount" translatable="false">Tsh. 1,106</string>
-    <string name="text_sample_tariff_header">metered domestic</string>
     <string name="title_tariffs">Tariffs</string>
     <string name="text_email">Email</string>
     <string name="text_contact_us">Contact Us</string>
-    <string name="call_center_number" translatable="false">0800110064</string>
     <string name="text_call_company">Call %1$s: \n%2$s</string>
     <string name="text_call">Call</string>
     <string name="action_call">Call:</string>
@@ -170,8 +145,6 @@
     <string name="error_phone_number_starts_with_0">Please remove the 0</string>
     <string name="error_phone_invalid">Phone number is invalid</string>
     <string name="title_faqs">FAQs</string>
-    <string name="title_quantity">Quantity</string>
-    <string name="title_tariff">Tariff</string>
     <string name="home_action_report">REPORT NEW ISSUE</string>
     <string name="home_action_see_list">VIEW REPORTED ISSUES</string>
     <string name="home_action_see_bill">SEE MY BILL</string>
@@ -204,8 +177,6 @@
     <string name="msg_application_error">Application was unable to submit your request.</string>
     <string name="msg_customer_registration_error">Account number is required.</string>
     <string name="msg_billing_error_invalid_account">Invalid Account Number.</string>
-    <string name="msg_billing_error_not_verified">Your phone number is not authorized to see this account. The account owner has been notified.</string>
-    <string name="msg_account_not_exists">Account does not exist!</string>
     <string name="tariffs_title_water_services">WATER SERVICES</string>
     <string name="tariffs_title_sewerage_services">SEWERAGE SERVICES</string>
     <string name="tariffs_sewerage_call_for_action">Please call for more information.</string>
