@@ -11,6 +11,8 @@
     <string name="map_ne_lng" translatable="false">…</string>
     <string name="map_sw_lat" translatable="false">…</string>
     <string name="map_sw_lng" translatable="false">…</string>
+    <string name="call_center_number" translatable="false">…</string>
+
 
     <!--The following must be overrode for all languages (currently en & sw) -->
     <string name="tariffs_description_water_services">…</string>
@@ -156,7 +158,6 @@
     <string name="title_tariffs">Tariffs</string>
     <string name="text_email">Email</string>
     <string name="text_contact_us">Contact Us</string>
-    <string name="call_center_number" translatable="false">0800110064</string>
     <string name="text_call_company">Call %1$s: \n%2$s</string>
     <string name="text_call">Call</string>
     <string name="action_call">Call:</string>

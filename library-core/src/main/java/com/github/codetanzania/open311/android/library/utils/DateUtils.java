@@ -70,11 +70,13 @@ public class DateUtils {
     }
 
     public static Calendar getCalendarFromParcel(Parcel in) {
-        long mills = in.readLong();
-        if (mills != -1) {
-            Calendar cal = new GregorianCalendar(TimeZone.getTimeZone(in.readString()));
-            cal.setTimeInMillis(mills);
-            return cal;
+        if (in != null) {
+            long mills = in.readLong();
+            if (mills != -1) {
+                Calendar cal = new GregorianCalendar(TimeZone.getTimeZone(in.readString()));
+                cal.setTimeInMillis(mills);
+                return cal;
+            }
         }
         return null;
     }
