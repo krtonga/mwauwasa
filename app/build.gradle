@@ -54,12 +54,12 @@ android {
         mwauwasa {
             dimension COMPANY
 
-            applicationIdSuffix ".mwuawasa"
-            versionNameSuffix "-mwuawasa"
+            applicationIdSuffix ".mwauwasa"
+            versionNameSuffix "-mwauwasa"
             versionCode 1
             versionName "1.0.0"
 
-            resValue "string", "content_provider", "com.github.codetanzania.mwuawasa.provider"
+            resValue "string", "content_provider", "com.github.codetanzania.mwauwasa.provider"
             ext {
                 buildconfigs = [
                         [type: 'String',
