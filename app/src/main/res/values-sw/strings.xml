@@ -18,7 +18,6 @@
     <string name="warning_no_reporter">Taarifa zako hazijapatikana. Tafadhali, rekebisha maelezo ya akaunti na ujaribu tena.</string>
     <string name="warning_empty_issue_body">Haiwezekani kutuma suala bila maelezo. Tafadhali, jaza maelezo!</string>
     <string name="use_location">Teua eneo</string>
-    <string name="title_loading_services">Tunasubiria huduma</string>
     <string name="title_issue_list">Madodoso ya ripoti</string>
     <string name="title_edit_profile">REKEBISHA TAARIFA ZAKO</string>
     <string name="text_unknown_location">Eneo halifahamiki</string>
@@ -72,11 +71,9 @@
     <string name="tab_open_issues">Yanayo shugulikiwa</string>
     <string name="text_cancel">Hairisha</string>
     <string name="text_capture_picture">Piga Picha</string>
-    <string name="text_close_status">Suala limefungwa</string>
     <string name="text_confirm_logout">Unahaukika unataka kuondoka?</string>
     <string name="text_empty_issues">Taarifa hazipatikani</string>
     <string name="text_empty_phone">Taarifa hazipatikani</string>
-    <string name="text_http_error">Matatizo ya wavuti. Ungependa kuripoti hitilafu?</string>
     <string name="text_image_src_browse_option">Chagua miongoni mwa picha zako</string>
     <string name="text_image_src_camera_option">Piga picha</string>
     <string name="text_issue_category">Kipengele Cha Suala</string>
@@ -88,12 +85,8 @@
     <string name="text_issue_title">Kipengele Cha Suala</string>
     <string name="text_issue_location_hint">Mfano, Mtaa wa kanisani.</string>
     <string name="text_item_saved">Akaunti imerekebishwa</string>
-    <string name="text_loading_services">Inapakua huduma. Tafadhali subiri&#8230;</string>
     <string name="text_opening_ticket">Suala linatumwa %1$s</string>
-    <string name="text_pending_description">Ufumbuzi haujakamilika</string>
     <string name="text_profile_desc">Picha ya mtumiaji</string>
-    <string name="text_received_status">Tiketi ya suala imefunguliwa</string>
-    <string name="text_report">Ndiyo, Toa taarifa</string>
     <string name="text_retry">Jaribu tena</string>
     <string name="action_allow_take_photo">Ruhusu</string>
     <string name="text_choose">Kubari Chaguo</string>
@@ -112,26 +105,17 @@
     <string name="action_view_payment_details">Jinsi ya kulipa</string>
     <string name="action_view_tariffs">Ushuru</string>
     <string name="et_account_number">Akaunti namba</string>
-    <string name="login_done">Endelea</string>
     <string name="login_title">Ingia</string>
     <string name="text_close_drawer">Funga</string>
     <string name="payment_instructions_title">Jinsi ya kulipia</string>
     <string name="bill_current_title">Bili ya sasa</string>
     <string name="error_account_no_required">Namba ya akaunti inahitajika.</string>
-    <string name="error_password_required">Neno siri linahitajika.</string>
-    <string name="login_account_hint">Namba ya akaunti</string>
-    <string name="login_password_hint">Kidokezo cha neno siri</string>
     <string name="text_contact_us">Wasiliana nasi</string>
     <string name="text_email">Barua Pepe</string>
     <string name="action_call">Piga Simu</string>
-    <string name="action_company_register">Jiandikishe</string>
     <string name="action_get_directions">Onyesha Ramani</string>
     <string name="action_visit_location">Anuani:</string>
     <string name="action_visit_web">Tembelea tovoti:</string>
-    <string name="bill_current_card1_header">Nambari ya nukuu</string>
-    <string name="bill_current_card2_header">Jina la Mteja\nNamba ya Mteja</string>
-    <string name="bill_current_card3_header">Tarehe ya kusoma mita\n\nUsomaji wa awali\nUsomaji wa sasa\nYuniti zilizo tumika</string>
-    <string name="bill_current_card4_header">Kianzio\nMasalio ya liyopo\Masalio ya kufungia</string>
     <string name="company_registration_done">SEE MY BILL</string>
     <string name="dialog_post_issue_success_message">Suala lako limewasilishwa. Nambari ya tiketi ni: %s</string>
     <string name="email_label">Barua Pepe</string>
@@ -141,11 +125,7 @@
     <string name="error_phone_number_starts_with_0">Please ondoa 0</string>
     <string name="text_call">Piga simu</string>
     <string name="text_call_company">Tupigie %1$s: \n%2$s</string>
-    <string name="text_tariff_quantity">Kiasi</string>
-    <string name="text_tariff_title">Ushuru</string>
     <string name="title_faqs">Maswali na Majibu</string>
-    <string name="title_quantity">Kiasi</string>
-    <string name="title_tariff">Ushuru</string>
     <string name="title_tariffs">Ushuru</string>
     <string name="user_details_title">Taarifa za Mteja</string>
     <string name="action_submit_request">Tuma maombi</string>
@@ -172,11 +152,9 @@
     <string name="text_new_connection_info">Jaza na kisha utume fomu hii ili maombi yako yaweze kushughulikiwa.</string>
     <string name="tariffs_sewerage_call_for_action_green_word">piga</string>
     <string name="tariffs_sewerage_call_for_action">Tafadhali piga simu kwa taarifa za ushuru wa majitaka.</string>
-    <string name="text_sample_tariff_header">mita - matumizi ya nyumbani</string>
     <string name="action_current">Ya sasa</string>
     <string name="dialog_post_issue_pos_btn">Tizama maendeleo</string>
     <string name="location_permission_denied">%1$s itahitaji kujua tatizo na sehemu husika. GPS inakuwezesha utafuta eneo ulilopo. Tafadhali ruhusu GPS na kisha jaribut tena.</string>
-    <string name="warning_io_failure">Upakuzi wa picha umeshindikana.</string>
     <string name="title_issue_description">Toa maelezo kuhusu tatizo</string>
     <string name="title_otp_verification">Tumetuma ujumbe mfupi wenye nambari za udhitibitisho wa simu yako. Tafadhali subiri ujumbe upokelewe kwenye simu yako.</string>
     <string name="text_hint_phone_number"><![CDATA[Tafadhali subiri nambari za uthibithisho…]]></string>
@@ -189,11 +167,13 @@
     <string name="text_invalid_verification_code">Namba ya uhakiki si sahihi!</string>
     <string name="title_otp_requesting_permission">Maombi ya ruhusa</string>
 
+
     <string name="action_main">Mail to:</string>
     <string name="action_get_email">Pata Barua Pepe</string>
     <string name="msg_customer_registration_error">" Namba ya mteja ni muhimu"</string>
     <string name="msg_account_not_exists">Namba ya mteja sio sahihi</string>
     <string name="tariffs_title_water_services">HUDUMA ZA MAJI SAFI</string>
     <string name="tariffs_title_sewerage_services">HUMA ZA MAJI TAKA</string>
+
 
 </resources>
