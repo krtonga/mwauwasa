@@ -168,7 +168,7 @@
     <string name="title_otp_requesting_permission">Maombi ya ruhusa</string>
 
 
-    <string name="action_main">Mail to:</string>
+    <string name="action_main">Barua inapokwenda:</string>
     <string name="action_get_email">Pata Barua Pepe</string>
     <string name="msg_customer_registration_error">" Namba ya mteja ni muhimu"</string>
     <string name="msg_account_not_exists">Namba ya mteja sio sahihi</string>
