@@ -4,10 +4,10 @@
 
     <string name="map_cameraTargetLat">-2.516430</string>
     <string name="map_cameraTargetLng">32.917452</string>
-    <string name="map_ne_lat">-2.63059</string>
-    <string name="map_ne_lng">32.78732</string>
-    <string name="map_sw_lat">-2.42479</string>
-    <string name="map_sw_lng">33.06198</string>
+    <string name="map_ne_lat">-2.70369</string>
+    <string name="map_ne_lng">32.88187</string>
+    <string name="map_sw_lat">-2.40392</string>
+    <string name="map_sw_lng">33.08189</string>
 
     <string name="tariffs_description_water_services">MWAUWASA’S Tariff Structure is built on the basis of consumption categories with fair consideration of equity and full cost recovery. Tariff review is regulated by the Energy and Water Utilities Regulatory Authority (EWURA) with effect from 2010/2012. The lower tariff at kiosks and stand posts is intended to ensure basic supply to the poor. Therefore the year under review was characterized by two tariff levels as reflected in the table below.</string>
     <string name="tariffs_description_sewerage">Cost for Sewerage is set at 50% the cost of consumed water.</string>
