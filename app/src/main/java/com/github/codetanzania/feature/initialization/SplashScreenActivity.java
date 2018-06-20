@@ -48,14 +48,17 @@ public class SplashScreenActivity extends AppCompatActivity {
                 // ask language preference
                 showLanguagePickerDialog();
             } else {
-                if (!PhoneVerificationUtils.isVerified(this)) {
+//                TODO: This must be uncommented as soon as server is ready
+//                if (!PhoneVerificationUtils.isVerified(this)) {
+                if (Util.getCurrentReporter(getApplicationContext()) == null) {
                     startActivity(new Intent(this, UserDetailsActivity.class));
                     finish();
                 } else {
                     // go home
                     startActivity(new Intent(this, MainActivity.class));
                     finish();
-                }            }
+                }
+            }
         } catch (Exception e) {
             // ignore
         }

@@ -1,5 +1,5 @@
 [{
-  "headline": "CHECK BILLS ONLINE\nDial *150*00#",
+  "headline": "CHECK BILLS ONLINE\nDial *152*00#",
   "steps": [
     "Dial *152*00#",
     "Select number 6 (MAJI)",
@@ -14,14 +14,53 @@
     "steps": [
       "Dial *150*00# to start payment via M-Pesa",
       "Select number 4 (MALIPO)",
-      "Select number 3 (CHAGUA KWENYE ORODHA)",
-      "Select number 7 (MALIPO YA MAJI)",
-      "Select number 3 (MWANZA-UWASA)",
-      "Select number 1 (WEKA NAMBA YA ACCOUNT)",
-      "Enter your MWAUWASA Account number (ACCOUNT NAMBA)",
-      "Weka kiasi",
-      "Weka namba ya siri",
-      "Bonyeza moja kithibitisha"
+      "Select number 4 (WEKA NUMBER YA KAMPUNI )",
+      "ENTER COMPANY NUMBER -eg. 001001 OR 888999",
+      "ENTER CONTROL NUMBER (GEPG)",
+      "ENTER AMOUNT",
+      "ENTER PASSWORD",
+      "ENTER ONE FOR CONTINUE"
+    ]
+  },
+
+  {
+    "headline": "PAY VIA tiGO-Pesa\nDial *150*01#",
+    "steps": [
+      "Dial *150*01# to start payment via tiGO-Pesa",
+      "Select number 4 (Bills Payment)",
+      "Select number 3 (Enter Company Number)",
+      "ENTER COMPANY NUMBER -eg. 001001 OR 888999",
+      "ENTER CONTROL NUMBER (GEPG)",
+      "ENTER AMOUNT",
+      "ENTER PASSWRORD",
+      "ENTER ONE FOR CONTINUE"
+    ]
+  },
+  {
+    "headline": "PAY VIA airtel Money\nDial *150*60#",
+    "steps": [
+      "Dial *150*60# to start payment via airtel Money",
+      "Select number 5 (Bills Payment)",
+      "Select number 4 (Enter Company Number)",
+      "ENTER COMPANY NUMBER -eg. 001001 OR 888999",
+      "ENTER CONTROL NUMBER (GEPG)",
+      "ENTER AMOUNT",
+      "ENTER PASSWORD",
+      "ENTER ONE FOR CONTINUE"
+    ]
+  },
+
+  {
+    "headline": "PAY VIA Halo-Pesa\nDial *150*60#",
+    "steps": [
+      "Dial *150*60# to start payment via Halo-Pesa",
+      "Select number 5 (Bills Payment)",
+      "Select number 4 (Enter Company Number)",
+      "ENTER COMPANY NUMBER -eg. 001001 OR 888999",
+      "ENTER CONTROL NUMBER (GEPG)",
+      "ENTER AMOUNT",
+      "ENTER PASSWORD",
+      "ENTER ONE FOR CONTINUE"
     ]
   },
   {

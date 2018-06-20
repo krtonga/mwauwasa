@@ -1,50 +1,50 @@
 [
   {
-    "service_type": "Water - Tsh/m³",
+    "service_type":"Maji- Tsh/m³",
     "levels":[
       {
-        "customer_type": "Domestic",
-        "quantity": "Up to 10m³",
+        "customer_type": "Majumbani",
+        "quantity": "Hadi  10m³",
         "tariff": "Tsh 700"
       },
       {
-        "customer_type": "Domestic",
+        "customer_type": "Majumbani",
         "quantity": "11-25m³",
         "tariff": "Tsh 865"
       },
       {
-        "customer_type": "Domestic",
-        "quantity": "Above 25m³",
+        "customer_type": "Majumbani",
+        "quantity": "juu ya lita 25",
         "tariff": "Tsh 900"
       },
       {
-        "customer_type": "Institutional",
+        "customer_type": "Taasisi",
         "tariff": "Tsh 925"
       },
       {
-        "customer_type": "Commercial",
+        "customer_type": "Biashara",
         "tariff": "Tsh 1,345"
       },
       {
-        "customer_type": "Industrial",
+        "customer_type": "Viwanda",
         "tariff": "Tsh 1,680"
       },
       {
-        "customer_type": "Construction",
+        "customer_type": "Ujenzi",
         "tariff": "Tsh 1,680"
       },
       {
-        "customer_type": "Bottling Industry",
+        "customer_type": "viwanda ya Chupa",
         "tariff": "Tsh 2,850"
       },
       {
-        "customer_type": "Kiosk",
+        "customer_type": "Kioski",
         "tariff": "Tsh 410"
       }
     ]
   },
   {
-    "service_type": "Reconnection",
+    "service_type": "Tozo",
     "description":"You are expected to timely pay your water and sewerage bills. The services shall be disconnected at your premises without further notice as a result of outstanding/pending water and sewerage bills. You are expected to provide accurate and correct address for delivering water and sewerage bills. In addition to the water and sewerage bills, you shall pay such rent for the use of any meter as may be described. All water meters shall be provided and remain the property of the Authority. A customer who fails to settle his/her bill within the stipulated time will be subject to disconnection. Disconnection can also be effected if customer damages a meter. Leakage on service line, which is not repaired, will also be subject to a disconnection. Any individual found consuming water illegally shall be disconnected and subject to legal action which includes the fine below.",
     "levels":[
       {

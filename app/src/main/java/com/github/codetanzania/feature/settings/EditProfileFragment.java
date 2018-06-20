@@ -270,12 +270,12 @@ public class EditProfileFragment extends Fragment implements
         if (userInputsAreValid(userName, phoneNumber) && extrasValid) {
             saveReporter(userName, phoneNumber, accountNo, email);
 
+//            TODO: This must be uncommented as soon as server is ready
 //            if (!PhoneVerificationUtils.isVerified(getActivity())) {
-            if (false) {
-                // start verification code
-                startOTPVerification();
-                return false;
-            }
+//                // start verification code
+//                startOTPVerification();
+//                return false;
+//            }
 
             return true;
         }

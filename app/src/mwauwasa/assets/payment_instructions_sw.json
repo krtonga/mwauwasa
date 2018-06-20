@@ -1,5 +1,5 @@
 [{
-  "headline": "CHECK BILLS ONLINE\nDial *150*00#",
+  "headline": "CHECK BILLS ONLINE\nDial *152*00#",
   "steps": [
     "Piga *152*00#",
     "Chagua namba 6 (MAJI)",
@@ -12,16 +12,54 @@
   {
     "headline": "PAY VIA M-Pesa\nDial *150*00#",
     "steps": [
-      "Piga *150*00# kupata orodha ya  M-Pesa",
-      "Chagua  namba 4 (MALIPO)",
-      "Chagua namba 3 (CHAGUA KWENYE ORODHA)",
-      "Chagua nmaba 7 (MALIPO YA MAJI)",
-      "Chagua namba 3 (MWANZA-UWASA)",
-      "Chagua namba 1 (WEKA NAMBA YA ACCOUNT)",
-      "Ingiza namba ya malipo (ACCOUNT NAMBA)",
-      "Weka kiasi",
-      "Weka namba ya siri",
-      "Bonyeza moja kithibitisha"
+      "Dial *150*00# to start payment via M-Pesa",
+      "Select number 4 (MALIPO)",
+      "Select number 4 (WEKA NUMBER YA KAMPUNI )",
+      "TAFADHALI WEKA YA KAMPUNI-eg. 001001 OR 888999",
+      "WEKA KUMBUKUMBU NAMBA YA MALIPO(GEPG)",
+      "WEKA KIASI CHA FEDHA",
+      "WEKA NAMBA YA SIRI",
+      "BONYEZA MOJA KUTHIBITISHA"
+    ]
+  },
+  {
+    "headline": "PAY VIA tiGO-Pesa\nDial *150*01#",
+    "steps": [
+      "Dial *150*01# to start payment via tiGO-Pesa",
+      "Select number 4 (MALIPO)",
+      "Select number 3 (WEKA NUMBER YA KAMPUNI )",
+      "TAFADHALI WEKA YA KAMPUNI-eg. 001001 OR 888999",
+      "WEKA KUMBUKUMBU NAMBA YA MALIPO(GEPG)",
+      "WEKA KIASI CHA FEDHA",
+      "WEKA NAMBA YA SIRI",
+      "BONYEZA MOJA KUTHIBITISHA"
+    ]
+  },
+  {
+    "headline": "PAY VIA airtel Money\nDial *150*60#",
+    "steps": [
+      "Dial *150*60# to start payment via airtel Money",
+      "Select number 5 (MALIPO)",
+      "Select number 4 (WEKA NUMBER YA KAMPUNI )",
+      "TAFADHALI WEKA YA KAMPUNI-eg. 001001 OR 888999",
+      "WEKA KUMBUKUMBU NAMBA YA MALIPO(GEPG)",
+      "WEKA KIASI CHA FEDHA",
+      "WEKA NAMBA YA SIRI",
+      "BONYEZA MOJA KUTHIBITISHA"
+    ]
+  },
+
+  {
+    "headline": "PAY VIA Halo-Pesa\nDial *150*60#",
+    "steps": [
+      "Dial *150*60# to start payment via Halo-Pesa",
+      "Select number 5 (MALIPO)",
+      "Select number 4 (WEKA NUMBER YA KAMPUNI )",
+      "TAFADHALI WEKA YA KAMPUNI-eg. 001001 OR 888999",
+      "WEKA KUMBUKUMBU NAMBA YA MALIPO(GEPG)",
+      "WEKA KIASI CHA FEDHA",
+      "WEKA NAMBA YA SIRI",
+      "BONYEZA MOJA KUTHIBITISHA"
     ]
   },
   {

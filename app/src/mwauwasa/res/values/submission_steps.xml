@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="submission_steps">
-        <item>@string/title_select_current_location</item>
-        <item>@string/title_submit_issue_details</item>
-    </string-array>
-    <string name="title_select_current_location">Where is the problem?</string>
-    <string name="title_submit_issue_details">What is the problem?</string>
-</resources>
