@@ -1,16 +1,16 @@
 [{
-  "headline": "CHECK BILLS ONLINE\nDial *152*00#",
+  "headline": "ANGALIA BILI MTANDAONI\nDial *152*00#",
   "steps": [
     "Piga *152*00#",
     "Chagua namba 6 (MAJI)",
     "Chagua namba 4 (MWAUWASA)",
     "Chagua numba 1 (DENI LA MAJI)",
     "Ingiza nambari ya akaunti yako ya MWAUWASA.",
-    "Wait for SMS"
+    "SUBIRI UJUMBE MFUPI"
   ]
 },
   {
-    "headline": "PAY VIA M-Pesa\nDial *150*00#",
+    "headline": "LIPA KUPITIA M-Pesa\nDial *150*00#",
     "steps": [
       "Dial *150*00# to start payment via M-Pesa",
       "Select number 4 (MALIPO)",
@@ -23,11 +23,11 @@
     ]
   },
   {
-    "headline": "PAY VIA tiGO-Pesa\nDial *150*01#",
+    "headline": "LIPA KUPITIA tiGO-Pesa\nDial *150*01#",
     "steps": [
-      "Dial *150*01# to start payment via tiGO-Pesa",
-      "Select number 4 (MALIPO)",
-      "Select number 3 (WEKA NUMBER YA KAMPUNI )",
+      "PIGA *150*01# KUANZA KULIPA KWA tiGO-Pesa",
+      "CHAGUA NAMBA 4 (MALIPO)",
+      "CHAGUA NUMBER 3 (WEKA NUMBER YA KAMPUNI )",
       "TAFADHALI WEKA YA KAMPUNI-eg. 001001 OR 888999",
       "WEKA KUMBUKUMBU NAMBA YA MALIPO(GEPG)",
       "WEKA KIASI CHA FEDHA",
@@ -36,11 +36,11 @@
     ]
   },
   {
-    "headline": "PAY VIA airtel Money\nDial *150*60#",
+    "headline": "LIPA KUPITIA airtel Money\nDial *150*60#",
     "steps": [
-      "Dial *150*60# to start payment via airtel Money",
-      "Select number 5 (MALIPO)",
-      "Select number 4 (WEKA NUMBER YA KAMPUNI )",
+      "PIGA *150*60# KUANZA KULIPA KWA airtel Money",
+      "CHAGUA NAMBA 5 (MALIPO)",
+      "CHAGUA NAMBA 4 (WEKA NUMBER YA KAMPUNI )",
       "TAFADHALI WEKA YA KAMPUNI-eg. 001001 OR 888999",
       "WEKA KUMBUKUMBU NAMBA YA MALIPO(GEPG)",
       "WEKA KIASI CHA FEDHA",
@@ -50,11 +50,11 @@
   },
 
   {
-    "headline": "PAY VIA Halo-Pesa\nDial *150*60#",
+    "headline": "LIPA KUPITIA Halo-Pesa\nDial *150*60#",
     "steps": [
-      "Dial *150*60# to start payment via Halo-Pesa",
-      "Select number 5 (MALIPO)",
-      "Select number 4 (WEKA NUMBER YA KAMPUNI )",
+      "PIGA *150*60# KUANZA KULIPA KWA Halo-Pesa",
+      "CHAGUA NAMBA 5 (MALIPO)",
+      "CHAGUA NAMBA 4 (WEKA NUMBER YA KAMPUNI )",
       "TAFADHALI WEKA YA KAMPUNI-eg. 001001 OR 888999",
       "WEKA KUMBUKUMBU NAMBA YA MALIPO(GEPG)",
       "WEKA KIASI CHA FEDHA",
@@ -63,9 +63,9 @@
     ]
   },
   {
-    "headline": "Pay at MWAUWASA Offices",
+    "headline": "ofisi za MWAUWASA",
     "steps": [
-      "You can pay at any MWAUWASA Office, during office hours.\nCheck the \"Contact Us\" page and click \"Address\" to get directions to the MWAUWASA Office nearest you."
+      "Mwauwasa haipokei malipo yeyote kwa njia ya Cash ofisini.\nCheck the \"Contact Us\" page and click \"Address\" to get directions to the MWAUWASA Office nearest you."
     ]
   }
 ]
