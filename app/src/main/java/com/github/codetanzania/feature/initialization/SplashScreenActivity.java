@@ -11,6 +11,7 @@ import com.github.codetanzania.feature.home.MainActivity;
 import com.github.codetanzania.feature.intro.AppIntroActivity;
 import com.github.codetanzania.feature.views.SingleItemSelectionDialog;
 import com.github.codetanzania.feature.logincitizen.UserDetailsActivity;
+import com.github.codetanzania.open311.android.library.models.Reporter;
 import com.github.codetanzania.util.LanguageUtils;
 import com.github.codetanzania.feature.logincitizen.PhoneVerificationUtils;
 import com.github.codetanzania.util.Util;

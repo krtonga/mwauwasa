@@ -68,7 +68,7 @@ public class IssueListPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (isEmpty) {
-            return EmptyIssuesFragment.getNewInstance(null);
+            return EmptyIssuesFragment.getNewInstance();
         }
 
         switch (position) {
