@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.github.codetanzania.feature.company.logincustomer.CompanyRegisterFragment;
+import com.github.codetanzania.feature.list.EmptyIssuesFragment;
 import com.github.codetanzania.feature.list.ProgressBarFragment;
 import com.github.codetanzania.feature.settings.UserProfileChangeEvent;
 import com.github.codetanzania.open311.android.library.api.MajiFixAPI;
@@ -34,6 +35,7 @@ public class BillingActivity extends AppCompatActivity
     private static final String LOADING_FRAG_TAG = "loading";
     private static final String REGISTER_FRAG_TAG = "register";
     private static final String STATEMENTS_FRAG_TAG = "statements";
+    private static final String EMTPY_FRAG_TAG = "empty";
 
     private Disposable mDisposable;
 
@@ -104,11 +106,21 @@ public class BillingActivity extends AppCompatActivity
             return;
         }
 
+        // If bills are available show bills, otherwise show empty
+        Fragment fragment;
+        String tag;
+        if (account.getBills() == null || account.getBills().isEmpty()) {
+            fragment = EmptyIssuesFragment.getNewInstance(R.string.msg_bill_empty);
+            tag = EMTPY_FRAG_TAG;
+        } else {
+            fragment = MiniStatementFragment.getInstance(account);
+            tag = STATEMENTS_FRAG_TAG;
+        }
+
         // Show billing fragment
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frl_FragmentOutlet,
-                MiniStatementFragment.getInstance(account), STATEMENTS_FRAG_TAG);
+        fragmentTransaction.replace(R.id.frl_FragmentOutlet, fragment, tag);
         fragmentTransaction.commit();
 
         // Update action bar title

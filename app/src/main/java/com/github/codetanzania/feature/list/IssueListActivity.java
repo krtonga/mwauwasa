@@ -228,7 +228,7 @@ public class IssueListActivity extends AppCompatActivity
         // hide controls. no need to show them while data is being loaded
         showMenuItems(false);
 
-        EmptyIssuesFragment frag = EmptyIssuesFragment.getNewInstance(null);
+        EmptyIssuesFragment frag = EmptyIssuesFragment.getNewInstance();
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.frl_TicketsActivity, frag)

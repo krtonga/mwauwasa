@@ -3,10 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/CompanyCard.Billing">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_sub_items"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/default_padding">
 
-    <include layout="@layout/item_billing" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sub_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/item_billing" />
+
+    </LinearLayout>
 </android.support.v7.widget.CardView>

@@ -177,9 +177,21 @@
     <string name="msg_application_error">Application was unable to submit your request.</string>
     <string name="msg_customer_registration_error">Account number is required.</string>
     <string name="msg_billing_error_invalid_account">Invalid Account Number.</string>
+    <string name="msg_bill_empty">Billing Statements are Unavailable.</string>
     <string name="tariffs_title_water_services">WATER SERVICES</string>
     <string name="tariffs_title_sewerage_services">SEWERAGE SERVICES</string>
     <string name="tariffs_sewerage_call_for_action">Please call for more information.</string>
     <string name="tariffs_sewerage_call_for_action_green_word">call</string>
     <string name="action_mail">Mail to:</string>
+    <string name="bill_issued">Bill Issued</string>
+    <string name="bill_period_start">Period Start</string>
+    <string name="bill_period_end">Period End</string>
+    <string name="bill_due">Due</string>
+    <string name="bill_name">Name</string>
+    <string name="bill_number">Account Number</string>
+    <string name="bill_opening">Opening Balance</string>
+    <string name="bill_charges">Period Charges</string>
+    <string name="bill_closing">Closing Balance</string>
+    <string name="bill_debt">Debt</string>
+    <string name="bill_outstanding">Outstanding</string>
 </resources>

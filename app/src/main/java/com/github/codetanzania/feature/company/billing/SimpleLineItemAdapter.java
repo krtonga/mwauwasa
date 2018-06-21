@@ -5,24 +5,24 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.github.codetanzania.open311.android.library.models.customer.LineItem;
 import com.github.codetanzania.open311.android.library.utils.DateUtils;
 
 import java.util.List;
 
 import tz.co.codetanzania.R;
 
+import static android.view.View.GONE;
+
 public class SimpleLineItemAdapter extends RecyclerView.Adapter<SimpleLineItemAdapter.LineItemViewHolder> {
     static final int SIMPLE_VIEW_TYPE = 0;
 
-    List<LineItem> mLineItems;
-    String mCurrency;
+    List<LineItemDisplay> mLineItems;
 
-    SimpleLineItemAdapter(List<LineItem> lineItems, String currency) {
+    SimpleLineItemAdapter(List<LineItemDisplay> lineItems) {
         mLineItems = lineItems;
-        mCurrency = currency;
     }
 
     @Override
@@ -34,25 +34,26 @@ public class SimpleLineItemAdapter extends RecyclerView.Adapter<SimpleLineItemAd
 
     @Override
     public void onBindViewHolder(LineItemViewHolder holder, int position) {
-        LineItem item = mLineItems.get(position);
+        LineItemDisplay item = mLineItems.get(position);
 
-        holder.tvLabel.setText(item.getName());
-
-        if (item.getTime() != null) {
-            holder.tvDate.setText(DateUtils.formatForDisplay(item.getTime()));
+        if (item.getLabel() == null) {
+            holder.tvLabel.setVisibility(GONE);
+        } else {
+            holder.tvLabel.setText(item.getLabel());
+            holder.tvLabel.setVisibility(View.VISIBLE);
         }
 
-        if (item.getQuantity() != null) {
-            String quantity = TextUtils.isEmpty(item.getUnit()) ?
-                    String.valueOf(item.getQuantity()) : (item.getQuantity() +" "+ item.getUnit());
-            holder.tvDate.setText(quantity);
+        holder.tvStart.setText(item.getStart());
+//        holder.tvStart.setTextColor(item.getNestedColor());
+
+        if (item.getCenter() == null) {
+            holder.tvCenter.setVisibility(GONE);
+        } else {
+            holder.tvCenter.setText(item.getCenter());
+            holder.tvCenter.setVisibility(View.VISIBLE);
         }
 
-        if (item.getPrice() != null) {
-            String price = TextUtils.isEmpty(mCurrency) ?
-                    String.valueOf(item.getPrice()) : (mCurrency +" "+ item.getPrice());
-            holder.tvDate.setText(price);
-        }
+        holder.tvEnd.setText(item.getEnd());
     }
 
     @Override
@@ -63,18 +64,22 @@ public class SimpleLineItemAdapter extends RecyclerView.Adapter<SimpleLineItemAd
     static class LineItemViewHolder extends RecyclerView.ViewHolder {
         int type = SIMPLE_VIEW_TYPE;
 
-        TextView tvDate;
         TextView tvLabel;
-        TextView tvQuantity;
-        TextView tvPrice;
+        TextView tvStart;
+        TextView tvCenter;
+        TextView tvEnd;
 
         LineItemViewHolder(View itemView) {
             super(itemView);
 
-            tvDate = (TextView) itemView.findViewById(R.id.tv_date);
             tvLabel = (TextView) itemView.findViewById(R.id.tv_label);
-            tvQuantity = (TextView) itemView.findViewById(R.id.tv_quantity);
-            tvPrice = (TextView) itemView.findViewById(R.id.tv_price);
+            tvStart = (TextView) itemView.findViewById(R.id.tv_start);
+            tvCenter = (TextView) itemView.findViewById(R.id.tv_center);
+            tvEnd = (TextView) itemView.findViewById(R.id.tv_end);
+        }
+
+        int getType() {
+            return type;
         }
     }
 }
